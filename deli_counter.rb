@@ -20,3 +20,4 @@ end
 def take_a_number(katz_deli, new_customer)
   katz_deli.push(new_customer
   puts "Welcome, #{name}. You are number #{katz_deli.length} in line.")
+end
