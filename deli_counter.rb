@@ -9,15 +9,14 @@ def line(num_in_line)
   end
 end
 
-# 2 Build a method that a new customer will use when entering the deli.
-# The `take_a_number` method should accept two arguments, the array for
-# the current line of people (`katz_deli`), and a string containing the
-# name of the person wishing to join the line.
-# The method should return the person's name along with their position in line.
-#**Top-Tip:** *Remember that people like to count from* `1`*, not from* `0` *("zero")
-#like computers.*
-
 def take_a_number(katz_deli, new_customer)
   katz_deli.push(new_customer)
   puts "Welcome, #{new_customer}. You are number #{katz_deli.length} in line."
+end
+
+def now_serving
+  #puts line(num_in_line)[1]
+  if line == []
+    puts "There is nobody waiting to be served"
+  end
 end
